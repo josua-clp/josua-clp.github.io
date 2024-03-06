@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop To-Do App</title>
+    <link rel="stylesheet" href="stylesheets/task.css">
+</head>
+<body>
+  
+    <div class="page">
+        <div class="bg" id="bg"></div>
+        <div class="page-container">
+            <div class="navbox">
+                <nav>
+                    <ul>
+                        <li><a href="overview.html">Overview</a></li>
+                        <li class="selected"><a href="/" >Board</a></li>
+                        <li><a href="list.html">List</a></li>
+                    </ul>
+                </nav>
+                <div class="logout">
+                    <a href="#">Log out</a>
+                </div>
+                
+            </div>
+
+            <div class="secon-navbox">
+                <div class="today">
+                    <p>Today, <span id="currentdate"> </span></p>
+                    <div class="more">
+                        <img src="icons8-mehr-90.png" alt="" id="more">
+                        <div class="allbuttons" id="allbuttons-box">
+                            <p id="close-all-buttons">X</p>
+                            <div class="buttons">
+                                <button id="change-time">⏰ Countdown</button>
+                                <button id="delete-all">🗑️ Delete all</button>
+                     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goodday">
+                <div class="greetings"> 
+                <h1>Good day 👋,</h1>
+                <p>enjoy your time!</p>
+                </div>
+                <div class="info-boxes">
+                    <div class="grid-item item1"></div>
+                    <div class="grid-item item2" ></div>
+                    <div class="grid-item item3"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="app-container">
+
+                        <div class="taskbox-title">
+                            <h1>Tasks</h1>
+                            <button id="add-a-new-task">Add a new Task</button>
+                        </div>
+
+
+                        <div class="task-boxes">
+                            <div class="positioner">
+                                <section id="not-started" class="task-list">
+                                    
+                                    <div class="task-container">
+                                       
+                                    <h2>To Do</h2>
+                                    
+                                    </div>
+                                </section>
+                                <section id="in-process" class="task-list">
+
+                                    <div class="task-container">
+                                        <h2>In Process</h2>
+                                    </div>
+                                </section>
+                                <section id="done" class="task-list">
+
+                                    <div class="task-container">
+                                        <h2>Done</h2>
+                                    </div>
+                                </section>
+                            </div>    
+                        </div>
+                    
+                </div>
+                <div class="createTask" id="createTask-boxs">
+                    <h1>Add Task</h1>
+                
+                    <input type="text" id="new-task-input" placeholder="Enter a Title">
+                    <input type="text" id="new-task-desc" placeholder="Enter a short description">
+                    <div class="date-add">
+                    <input type="date" id="new-task-date">
+                    <button id="add-task-btn">Add Task</button>
+                    </div>
+                </div>
+
+                
+
+        </div>
+    </div>
+
+    <script src="scripts/taskApp.js"></script>
+</body>
+</html>
