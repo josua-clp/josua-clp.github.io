@@ -10,5 +10,3 @@
 - 🗑️ Delete one or all to-dos
 
 
-<img src="https://github.com/josua-clp/josua-clp.github.io/blob/main/img/Bildschirmfoto%202024-03-06%20um%2012.46.37.png?raw=true">
-
